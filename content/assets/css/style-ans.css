@@ -10193,3 +10193,11 @@ a[class*="border"]:hover {
     border-color: var(--gray-700) !important;
 }
 /*# sourceMappingURL=style-ans.css.map */
+.columns-3 {
+  -moz-column-count: 3;
+  -moz-column-gap: 10px;
+  -webkit-column-count: 3;
+  /* -webkit-column-gap: 10px; */
+  /* column-count: 3; */
+  /* column-gap: 10px; */
+}
