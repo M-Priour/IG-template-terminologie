@@ -21,7 +21,7 @@
 {% assign prefix = site.data.artifacts[page.path].type %}
 <h2 id="root">{{example}}{{prefix}}: {{site.data.pages[page.path].title | escape_once}}</h2>
 {% include fragment-simpletable.html %}
-
+<div id="orig">
 <p><a href="{{[type]}}-{{[id]}}.{{[fmt]}}" no-download="true">Raw {{[fmt]}}</a> | <a href="{{[type]}}-{{[id]}}.{{[fmt]}}" download>Download</a></p>
 
   <!-- insert intro if present -->
@@ -31,6 +31,40 @@
 
   <!-- insert notes if present -->
   {% include fragment-notes.html type='{{[type]}}' id='{{[id]}}' %}
+</div>
+<div id="download" style="display:none">
+<table class="grid table table-bordered">
+	<tbody>
+		<tr>
+			<td><a href="./{{[type]}}-{{[id]}}.xslx">xslx</a> </td>
+			<td> Fichier excel </td>
+		</tr>	
+	
+		<tr>
+			<td><a href="./NOS/{{[type]}}-{{[id]}}.tabs">csv</a> </td>
+			<td> Fichier csv </td>
+		</tr>
+		<tr>
+			<td><a href="./NOS/{{[type]}}-{{[id]}}.pdf" class="file-link">Pdf</a> </td>
+			<td> Fichier PDF </td>
+		</tr>	
+		
+		<tr>
+			<td><a href="./NOS/{{[type]}}-{{[id]}}-svs.xml">svs</a> </td>
+			<td>  Fichier xml (Sharing Value Sets) </td>
+		</tr>
+		<tr>
+			<td><a href="./{{[type]}}-{{[id]}}.json">fhir</a> </td>
+			<td>  Fichier Fhir Json  </td>
+		</tr>
+		<tr>
+			<td><a href="./{{[type]}}-{{[id]}}.xml">fhir</a> </td>
+			<td>  Fichier Fhir Xml  </td>
+		</tr>		
+		
+	</tbody>
+	</table>
 
+</div>
 </div>
 {% include fragment-pageend.html %}

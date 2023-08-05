@@ -18,7 +18,7 @@
 <ul class="nav nav-tabs">
 {% if include.active == 'content' %}
   <li class="active">
-    <a href="#">Narrative Content</a>
+    <a href="{{include.type}}-{{include.id}}.html">Narrative Content</a>
   </li>
 {% else %}
   <li>
@@ -28,7 +28,7 @@
 {% unless excludexml == 'y' or contained_resource == 'y' or suppressformat == 'y' %}
   {% if include.active == 'xml' %}
     <li class="active">
-      <a href="#">XML</a>
+      <a href="{{include.type}}-{{include.id}}.xml.html">XML</a>
     </li>
   {% else %}
     <li>
@@ -39,7 +39,7 @@
 {% unless excludejson == 'y' or contained_resource == 'y' or suppressformat == 'y' %}
   {% if include.active == 'json' %}
     <li class="active">
-      <a href="#">JSON</a>
+     <a href="{{include.type}}-{{include.id}}.json.html">JSON</a>
     </li>
   {% else %}
     <li>
@@ -50,7 +50,7 @@
 {% unless excludettl == 'y' or contained_resource == 'y' or suppressformat == 'y' %}
   {% if include.active == 'ttl' %}
     <li class="active">
-      <a href="#">TTL</a>
+      <a href="{{include.type}}-{{include.id}}.ttl.html">TTL</a>
     </li>
   {% else %}
     <li>
@@ -59,12 +59,12 @@
   {% endif %}
  
   {% if include.active == 'download' %}
-    <li class="active">
-      <a href="#">Telechargement</a>
+    <li id="Adownload" class="active">
+      <a href="#">Téléchargement</a>
     </li>
   {% else %}
-    <li class="">
-      <a href="{{include.type}}-{{include.id}}.download.html">Téléchargement</a>
+    <li id="Adownload" class="">
+      <a href="#">Téléchargement</a>
     </li>
   {% endif %}
    

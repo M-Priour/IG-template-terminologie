@@ -36,6 +36,19 @@
       }
     });
   </script>
+  <script type="text/javascript">
+   $(document).ready(function(){
+		$( "#Adownload" ).on( "click", function() {
+		  
+			$( "#orig" ).css("display", "none");
+			$( "#download" ).css("display", "");
+
+			$("ul.nav-tabs ").children("li").removeClass();
+			$( "#Adownload" ).addClass("active");	
+
+		} );
+	} );
+</script>    
   <a name="bottom"> </a>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->

@@ -19,6 +19,9 @@
 </p>
 {% endif %}
 
+
+
+<div id="orig">
   <p>
     <b>References</b>
   </p>
@@ -69,6 +72,47 @@
       <td>Additional notes about how to use the code</td>
     </tr>
   </table>
+</div>
+<div id="download" style="display:none">
+<table class="grid table table-bordered">
+	<tbody>
+		<tr>
+			<td><a href="./{{[type]}}-{{[id]}}.xslx">xslx</a> </td>
+			<td> Fichier excel </td>
+		</tr>	
+	
+		<tr>
+			<td><a href="./NOS/{{[type]}}-{{[id]}}.tabs">csv</a> </td>
+			<td> Fichier csv </td>
+		</tr>
+		<tr>
+			<td><a href="./NOS/{{[type]}}-{{[id]}}.pdf" class="file-link">Pdf</a> </td>
+			<td> Fichier PDF </td>
+		</tr>	
+		
+		<tr>
+			<td><a href="./NOS/{{[type]}}-{{[id]}}-svs.xml">svs</a> </td>
+			<td>  Fichier xml (Sharing Value Sets) </td>
+		</tr>
+		<tr>
+			<td><a href="./{{[type]}}-{{[id]}}.json">fhir</a> </td>
+			<td>  Fichier Fhir Json  </td>
+		</tr>
+		<tr>
+			<td><a href="./{{[type]}}-{{[id]}}.xml">fhir</a> </td>
+			<td>  Fichier Fhir Xml  </td>
+		</tr>		
+		
+	</tbody>
+	</table>
+
+</div>
+
+
+
+
+
+
 
   {% if site.data.resources[resource_].contained != nil %}
   <h4>Contained resources</h4>
