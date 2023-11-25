@@ -24,6 +24,7 @@ $('#orig').find('table').each(function(indextable) {
 	firstTr.find('td').contents().unwrap().wrap('<th>')
 	$(this).prepend($('<thead></thead>').append(firstTr))
 	$(this).addClass("results"+indextable); 
+	  $(this).addClass("table-striped");
 
   $(".search"+indextable).keyup(function () {
     var searchTerm = $(".search"+indextable).val();
