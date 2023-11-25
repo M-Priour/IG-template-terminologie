@@ -41,7 +41,7 @@
 	
 $('#orig').find('table').each(function(index) { 
 
-	$('<div class="form-group pull-right"> <input type="text"  style="height:auto;font-size:12px" class="search' + index +' form-control" placeholder="Recherche"></div><span class="counter' + index + '  pull-right"></span>').insertBefore($(this));	
+	$('<div class="form-group pull-right"> <input type="text"  style="height:auto;font-size:12px" class="search' + index +' form-control" placeholder="Recherche">  <span class="counter' + index + ' "></span></div>').insertBefore($(this));	
 	firstTr = $(this).find('tr:first').remove()
 	firstTr.find('td').contents().unwrap().wrap('<th>')
 	$(this).prepend($('<thead></thead>').append(firstTr))
