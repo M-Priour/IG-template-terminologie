@@ -5,7 +5,7 @@ $(document).ready(function(){
 	//$("#terminologit-search-content-valueset-cld").attr("id","logical-definition-accordion-group");
 	var logicalDefHeading = $("#terminologit-search-content-valueset-cld").find("#logical-definition-cld");
 	$(logicalDefHeading).addClass("accordion-heading");
-	$(logicalDefHeading).append('<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#logical-definition-cld-collapse"><i class="gg-chevron-down"></i></a>');
+	$(logicalDefHeading).append('<a class="accordion-toggle" data-toggle="collapse" href="#logical-definition-cld-collapse"><i class="gg-chevron-down"></i></a>');
 	$(logicalDefHeading).next().addClass("accordion-body collapse");
 	$(logicalDefHeading).next().attr('id', 'logical-definition-cld-collapse');
 
