@@ -40,7 +40,7 @@ $(document).ready(function(){
 
         $('#back-to-top').tooltip('show');
 
-$('<h4>Recherche sur le SMT</h4><div class="">Indiquer un mot clé  puis taper sur "enter" :  <input type="text" id="ontoSearch"  style="height:auto;font-size:12px" class="search form-control" form-control" placeholder="Recherche">  <span class="counter" id="counterOnto"></span><div id="resultOnto"></div> </div><br/><br/><hr/>').insertAfter($('p:contains("concepts.")'));
+$('<hr><p><b>Recherche en live sur le SMT</b></p><div class="">Indiquer un mot clé  puis taper sur "enter" :  <input type="text" id="ontoSearch"  style="height:auto;font-size:12px" class="search form-control" form-control" placeholder="Recherche">  <span class="counter" id="counterOnto"></span><div id="resultOnto"></div> </div><hr/>').insertAfter($('p:contains("concepts.")'));
 
 $('#ontoSearch').on( "change", function() {
   $('#resultOnto').html("Recherche ...");
