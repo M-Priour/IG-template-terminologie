@@ -39,7 +39,16 @@
   <script type="text/javascript">
    $(document).ready(function(){
 	
+		$( "#Ahistoire" ).on( "click", function() {
+      loadHistoire();
+		  
+			$( "#orig" ).css("display", "none");
+			$( "#histoire" ).css("display", "");
 
+			$("ul.nav-tabs ").children("li").removeClass();
+			$( "#histoire" ).addClass("active");	
+
+		} );
 
 	   
 	   

@@ -67,6 +67,16 @@
       <a href="#">Téléchargement</a>
     </li>
   {% endif %}
+
+  {% if include.active == 'Histoire' %}
+  <li id="Ahistoire" class="active">
+    <a href="#">histoire</a>
+  </li>
+{% else %}
+  <li id="Ahistoire" class="">
+    <a href="#">histoire</a>
+  </li>
+{% endif %}
    
   
 {% endunless %}
