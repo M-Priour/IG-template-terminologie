@@ -3,7 +3,7 @@ $(document).ready(function(){
 
 
 $("#Ahistoire").click(function(){
-$('#idHistoire').html('<div id="histoire"><table class="grid table table-bordered"> <thead> <tr> <td>Histoire</td> <td>Version</td>        <td>Demande</td>       <td>Resultat</td> <td>Date</td>    </tr></thead>    <tbody id="idHistoire"> </tbody> </table>  </div>	      	      ');
+$('#divHistoire').html('<div id="histoire"><table class="grid table table-bordered"> <thead> <tr> <td>Histoire</td> <td>Version</td>        <td>Demande</td>       <td>Resultat</td> <td>Date</td>    </tr></thead>    <tbody id="idHistoire"> </tbody> </table>  </div>	      	      ');
 
 
 $.ajax({
