@@ -22,7 +22,7 @@ $.ajax({
         $('#idHistoire').append(content);
         
     	
-    	content ='<tr><td colspan="5"><table style="font-size:10px" class="table-striped"><tr><thead style="background-color:grey"><tr><td>Operation</td><td>Chemin</td><td>Nom</td><td>Précédent</td> <td>Valeur</td></tr></thead></tr><tbody id="histoire'+ obj.resource.meta.versionId + '"></tbody></tr></table></td></tr>';		
+    	content ='<tr><td colspan="5"><table style="font-size:10px;width:100%" class="table-striped"><tr><tr><td  style="background-color:grey">Operation</td><td  style="background-color:grey">Chemin</td  style="background-color:grey"><td>Nom</td><td  style="background-color:grey">Précédent</td> <td  style="background-color:grey">Valeur</td></tr><tbody id="histoire'+ obj.resource.meta.versionId + '"></tbody></tr></table></td></tr>';		
         console.log("https://smt.esante.gouv.fr/fhir/" + obj.id  +  "/$diff");   
         $('#idHistoire').append(content);          
 		    $.ajax({
