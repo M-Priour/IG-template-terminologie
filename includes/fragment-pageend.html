@@ -45,10 +45,10 @@
 		  
 			$( "#orig" ).css("display", "none");
 			$( "#download" ).css("display", "none");
-			$( "#histoire" ).css("display", "");
 
 			$("ul.nav-tabs ").children("li").removeClass();
-			$( "#histoire" ).addClass("active");	
+			$( "#Ahistoire" ).addClass("active");	
+			$( "#Adownload" ).removeClass("active");	
 
 		} );
 
@@ -59,7 +59,7 @@
 			$( "#orig" ).css("display", "none");
 			$( "#divHistoire" ).html("");
 			$( "#download" ).css("display", "");
-
+			$( "#Ahistoire" ).removeClass("active");
 			$("ul.nav-tabs ").children("li").removeClass();
 			$( "#Adownload" ).addClass("active");	
 
