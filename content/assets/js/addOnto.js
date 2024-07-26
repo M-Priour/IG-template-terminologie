@@ -17,7 +17,7 @@ $.ajax({
       if (data.entry != null) {   
         $.each(data.entry, function (i, obj) { 
         var content = '<tr>' ;
-        content += '<td>'+  obj.resource.meta.versionId +'</td><td  >' + obj.resource.version +'</td><td>' + obj.response.method  +'</td><td> ' + obj.response.status  + '</td><td> '+ obj.response.lastModified  +'</td>';
+        content += '<td>'+  obj.resource.meta.versionId +'</td><td  >' + obj.resource.version +'</td><td>' + obj.request.method  +'</td><td> ' + obj.response.status  + '</td><td> '+ obj.response.lastModified  +'</td>';
         content += '</tr>';
         $('#idHistoire').append(content);
         
