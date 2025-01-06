@@ -96,7 +96,7 @@ $.ajax({
 	var logicalDefHeading = $("#terminologit-search-content-valueset-cld").find("#logical-definition-cld");
 	$(logicalDefHeading).addClass("accordion-heading");
 	$(logicalDefHeading).append('<a class="accordion-toggle" data-toggle="collapse" href="#logical-definition-cld-collapse"><i class="gg-chevron-down"></i></a>');
-	$(logicalDefHeading).next().addClass("accordion-body collapse");
+	$(logicalDefHeading).next().addClass("accordion-body");
 	$(logicalDefHeading).next().attr('id', 'logical-definition-cld-collapse');
 
 	$('.gg-chevron-down').each(function () {
